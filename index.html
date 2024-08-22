@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calorie Counter</h1>
+      <form id="calorieForm">
+        <label for="budget">Calorie Budget:</label>
+        <input
+          type="number"
+          id="budget"
+          placeholder="Enter your calorie budget"
+          required
+        />
+
+        <label for="breakfastName">Breakfast:</label>
+        <input type="text" id="breakfastName" placeholder="Name" required />
+        <input
+          type="number"
+          id="breakfastCalories"
+          placeholder="Calories"
+          required
+        />
+
+        <label for="lunchName">Lunch:</label>
+        <input type="text" id="lunchName" placeholder="Name" required />
+        <input
+          type="number"
+          id="lunchCalories"
+          placeholder="Calories"
+          required
+        />
+
+        <label for="dinnerName">Dinner:</label>
+        <input type="text" id="dinnerName" placeholder="Name" required />
+        <input
+          type="number"
+          id="dinnerCalories"
+          placeholder="Calories"
+          required
+        />
+
+        <label for="snacksName">Snacks:</label>
+        <input type="text" id="snacksName" placeholder="Name" required />
+        <input
+          type="number"
+          id="snacksCalories"
+          placeholder="Calories"
+          required
+        />
+
+        <label for="exerciseName">Exercise:</label>
+        <input type="text" id="exerciseName" placeholder="Name" required />
+        <input
+          type="number"
+          id="exerciseCalories"
+          placeholder="Calories"
+          required
+        />
+
+        <button type="button" id="calculateBtn">Calculate</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </form>
+
+      <div id="results">
+        <h2>Results</h2>
+        <p>Total Calories: <span id="totalCalories">0</span></p>
+        <p>Remaining Calories: <span id="remainingCalories">0</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
